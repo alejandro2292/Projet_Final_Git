@@ -1,0 +1,25 @@
+cd Documents
+mkdir Projet_Git
+cd Projet_Git
+git init
+git remote add origin https://github.com/alejandro2292/Projet_Final_Git.git
+touch mobile.css
+nano mobile.css
+*modifié le fichier*
+git checkout -b Antoine
+git add mobile.css
+git config user.name "Antrielgit"
+git config user.email "antoine.nusbaum06@gmail.com"
+git commit -m "Premier commit de mobile.css"
+git push -u origin Antoine
+*Mettre nom*
+*Mettre token*
+git fetch
+git branch -a (pour vérifier les branches)
+git checkout css (branch de alexandre)
+ls -a
+nano style.css
+*Modifié le fichier*
+git add style.css
+git commit -m "Changement du fichier d'Alexandre"
+git push -u origin css
