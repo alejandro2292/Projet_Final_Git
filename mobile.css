@@ -1,5 +1,16 @@
 @media (max-width: 600px) {
-  body { font-size: 16px; padding: 10px; }
-  img { width: 100%; height: auto; }
-  nav { flex-direction: column; }
+  body { 
+    font-size: 16px; 
+    padding: 10px; 
+  }
+  img { 
+    width: 100%; 
+    height: auto; 
+  }
+  nav { 
+    flex-direction: column; 
+  }
+  main, aside { 
+    width: 100%;
+  }
 }
