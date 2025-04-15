@@ -7,7 +7,7 @@ body{
     flex-wrap: wrap;
 }
 header{
-    background-color: aqua;
+    background-color: grey;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -15,18 +15,18 @@ header{
 nav{
     background-color: lightgreen;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 100%;
 }
 main{
     background-color: brown;
-    width: 80%;
+    width: 70%;
 }
 aside{
-    background-color: blueviolet;
-    width: 20%;
+    background-color: blue;
+    width: 30%;
 }
 footer{
-    background-color: rgb(121, 8, 8);
+    background-color: rgb(1, 87, 148);
     width: 100%;
 }
