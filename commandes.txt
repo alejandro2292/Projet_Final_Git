@@ -1,0 +1,41 @@
+Liste de commandes :
+
+1. cd Documents
+2. mkdir Projet_Git
+3. cd Projet_Git
+4. git init
+5. git remote add origin https://github.com/alejandro2292/Projet_Final_Git
+6. nano index.html (j'ai mis le HTML)
+7. git add index.html
+8. git config user.email "pignon.gabriel1@gmail.com"
+9. git config user.name "papignouf"
+10. git commit -m "Voici la partie HTML du site"
+11. git push -u origin master
+
+On m'a demandé ensuite le username et le mot de passe (token que j'ai regénéré puisque c'est une VM vierge), puis le fichier index.html a été push vers le dépôt d'Alexandre.
+
+Par la suite, je me suis rendu compte que j'avais oublié de créer ma propre branche donc j'ai renommé la branche master en "Gabriel_HTML" puis je l'ai repush. Le seul problème est que j'ai donc push deux fois le même fichier dans deux branches différentes.
+
+Ensuite, je devais modifier le contenu des branches de mes camarades donc j'ai fait ces commandes suivantes :
+
+12. git branch -a (pour voir toutes les branches)
+13. git checkout Antoine (sa branche)
+14. nano mobile.css (J'ai modifié le fichier d'Antoine)
+15. git add mobile.css
+16. git commit -m "Voici les changements que j'ai apporté au fichier d'antoine"
+17. git push -u origin Antoine
+
+On m'a ensuite redemandé le username et le mot de passe qui était toujours le token que j'avais crée auparavant et après le fichier a pu être modifié en direct dans github.
+
+Mais on a eu un problème, qui était qu'on essayait de supprimer la branche master. Le git s'est initialisé sur la branche css à cause d'un git init donc lorsque nous avons voulu fusionner le tout dans master, nous ne pouvions pas et donc nous avons décidé de supprimer la branche master puis de renommer la branche css en main qui était la vraie branche master et ensuite de fusionner sur css.
+
+18. git checkout css
+19. git push origin --delete master
+20. git branch -m main
+
+Au final, nous n'avons pas pu fusionner en raison de problèmes inexpliqués. Nous avons donc supprimé la branche main puis laissé sans fusion (désolé).
+
+21. git add *
+22. git commit -m "Rename branche"
+23. git push -u origin main
+24. git push origin --delete main
