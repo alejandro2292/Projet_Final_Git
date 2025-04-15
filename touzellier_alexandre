@@ -1,0 +1,31 @@
+Commande Alexandre :
+
+git init 'dans un dossier fait pour le projet final'
+ls -a 'pour vérifier le git init'
+git remote add origin https://github.com/alejandro2292/Projet_Final_Git
+git checkout -b css
+git config user.email atouzellier@gmail.com
+git config user.name Alejandro2292
+git add style.css
+git commit -m 'fichier css du site'
+git push -u origin css
+git fetch 'pour récupérer le travail de mes collègues'
+git checkout Gabriel_HTML
+git branch
+nano index.html 
+git add index.html
+git commit -m "correctif du code html"
+git push -u origin Gabriel_HTML
+git checkout master
+git merge css
+git merge Antoine
+git merge Gabriel_HTML
+
+On a eu un problème de fusion, nous forçant à supprimer la branche master pour ensuite rename la branche css en master. 
+Plus de détail sur la doc de Gabriel Pignon
+
+pour l'envoie du log.txt, j'ai eu un problème de réseau sur VMware me coupant la connexion sur toute mes vm.
+Par conséquent, j'ai utilisé l'interface graphique pour envoyé ce document. Comme je suis un étudiant honnête, je vous met ci-dessous les commandes que j'aurais normalement du utilisé
+git add touzellier_alexandre.txt
+git commit -m 'fichier log'
+git push -u origin css
